@@ -1,6 +1,7 @@
 .image{
     height: 200px;
     width: 300px;
-    border-radius: 50px;
+    border-radius: 50%;
     font-weight: 900;
 }
+

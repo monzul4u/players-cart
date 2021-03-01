@@ -16,15 +16,16 @@ function App() {
     const newPCart = [...cart, player];
     setCart(newPCart);
   }
+  
 
   return (
-    <div className="App-item">
+    <div className="container">
       <div className="player-class">
-      <h2>Total Number of Player:{player.length}</h2>
-      <h2>Player Added: {cart.length}</h2>
+      <h3>World Most Famous Ten Player</h3>
+      <h5>Total Number of Player:{player.length}</h5>
        <Cart cart={cart}></Cart>
       { 
-      player.map(player => <Player player={player} handleAddPlayer={handleAddPlayer}></Player>)
+      player.map(player => <Player player={player} key={player.id} handleAddPlayer={handleAddPlayer}></Player>)
     }
       </div>
       
