@@ -13,11 +13,17 @@ const cart = (props) => {
         const ListedPlayer = cart[i];
         addedPlayer = ListedPlayer.name;
     }
+    let playerBudget = 10000000;
+    for (let i = 0; i < cart.length; i++) {
+        const budgetPlayer = cart[i];
+        playerBudget = playerBudget -budgetPlayer.salary;
+    }
     return (
         <div>
            <h5>Added Player: {addedPlayer}</h5>
            <h5>Total Player in Cart: {cart.length}</h5> 
            <h5>Total Player Salary : ${totalSalary}</h5>
+           <h4>Total Player Budget Remain: ${playerBudget}</h4>
         </div>
     );
 };
