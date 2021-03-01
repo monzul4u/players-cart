@@ -17,7 +17,7 @@ const cart = (props) => {
         <div>
            <h5>Added Player: {addedPlayer}</h5>
            <h5>Total Player in Cart: {cart.length}</h5> 
-           <h5>Total Player Budget : ${totalSalary}</h5>
+           <h5>Total Player Salary : ${totalSalary}</h5>
         </div>
     );
 };
